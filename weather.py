@@ -52,7 +52,6 @@ def get_weather(my_city):
 
 
 def get_daily_love():
-    # 每日一句情话
     url = "https://api.lovelive.tools/api/SweetNothings/Serialization/Json"
     r = requests.get(url)
     all_dict = json.loads(r.text)
@@ -63,7 +62,6 @@ def get_daily_love():
 
 
 def weather_report(this_city):
-    # 1.获取access_token
     weather = get_weather(this_city)
     print(f"天气信息： {weather}")
 
